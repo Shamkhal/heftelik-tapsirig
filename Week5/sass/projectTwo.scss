@@ -1,0 +1,224 @@
+$mainColor: #29c2e1;
+$secondColor: #e5eef0;
+$thirdColor: #8d8d8d;
+$fourthColor: #ffffff;
+$fifthColor: #f7941d;
+$sixthColor: #23282f;
+$mainSize: 50px;
+$margin: 400px;
+
+html, body{
+	margin:0;
+	padding:0;
+	font-family:Tahoma;
+}
+#header{
+	.information{
+		background-color: $secondColor ;
+		height:$mainSize; 
+		li{
+			line-height: $mainSize;
+			color: lighten($thirdColor, 20%);
+			margin-right: $mainSize / 2; 
+			margin-top: -2px;
+			&:nth-child(2){
+				border-left: 1px solid lighten($thirdColor, 10%);
+			}
+		
+			i{
+				margin-top: $mainSize / 10;
+				margin-right: $mainSize / 20;
+				padding-left: $mainSize / 2;
+				font-size: 1.5em;
+			}
+		}
+	}
+	.menu{
+		img{
+			margin-top: -$mainSize / 8;
+		}
+ 		li{
+ 			padding-left: $mainSize / 2;
+ 			padding-right: $mainSize / 2;
+ 			transition: all .1s ease;
+ 			a{
+ 			text-decoration: none;	
+ 			color: lighten($thirdColor, 20%);	
+			&:hover{
+ 				color: darken($thirdColor, 20%);
+ 			}	
+ 		}
+			&:last-child{
+	 			margin-top: -$mainSize / 8;
+	 			margin-bottom: -$mainSize / 8;
+	 			padding-top:$mainSize / 8;
+	 			padding-bottom:$mainSize / 8;
+	 			background-color:$mainColor;
+	 			border-radius: 20px;
+	 			a{
+	 				color: $fourthColor;
+	 			&:hover{
+ 				color: darken($thirdColor, 20%);
+ 					}
+	 			}
+ 			}		
+ 		}
+	}
+}
+#banner{
+	.main{
+		height: 310px;
+		background-color:$thirdColor;
+		margin-top: -$mainSize / 2;
+		color: $fourthColor;
+		text-align: center;
+		letter-spacing: 1px;
+		margin-bottom: $mainSize * 2;
+		h3{
+			&:first-child{
+				margin-top: $mainSize * 2; 
+			}
+		}
+		h1{
+			margin-top: $mainSize * 2;
+		}
+	}
+}
+#projects{
+	.main{
+		.gray{
+			height: 380px;
+			background-color: $thirdColor;
+			padding-top: $mainSize * 3;
+			text-align: center;
+			color: $fourthColor;
+			margin-bottom: $mainSize / 2;
+		}
+			}
+}
+#freeService{
+	.main{
+		text-align: center;
+		border-bottom: 1px solid lighten($thirdColor, 20% );
+		margin-bottom: $mainSize / 2 * 3;
+		h1{
+			color:#000000;
+			span{
+				color: $fifthColor;
+			}
+		}
+		h5{
+			text-transform: uppercase;
+		}
+		button{
+			padding-top:$mainSize / 8;
+		 	padding-bottom:$mainSize / 8;
+		 	padding-left:$mainSize / 3;
+		 	padding-right:$mainSize / 3;
+		 	margin-top: $mainSize / 5 * 3;
+		 	margin-bottom: $mainSize / 5 * 4;
+		 	background-color:$mainColor;
+		 	border: none;
+		 	border-radius: 20px;
+		 	color: $fourthColor;
+		 	letter-spacing: 1px;
+			}
+			.orange{
+				background-color: $fifthColor;
+			}
+	}
+}
+#footer{
+	.main{
+		
+		padding-bottom: $mainSize;		
+		&:after{
+			content: " ";
+			height: 400px;
+			position: absolute;
+			border:250px solid transparent;
+			border-bottom:240px solid $fifthColor;
+			transform:rotate(-136deg);
+			margin-left: -$margin * 1.1;
+			margin-top: -$mainSize / 0.76;
+		}
+		img{
+			margin-left: $mainSize / 10 * 3;
+		}
+	.menu{
+		h3{
+		margin-bottom: $mainSize / 2;
+	}
+		h5{
+			color: $thirdColor;
+			margin-top: $mainSize / 10;
+			margin-left: -$mainSize / 4;
+		}
+		i{
+			color: $thirdColor;
+		
+		}
+	}
+	.contact{
+		h3{
+		margin-bottom: $mainSize / 2;
+	}
+		h5{
+		color: $thirdColor;
+		span{
+			color: #000000;
+			}
+		}
+	}
+	.newsletter{
+		h3{
+		margin-bottom: $mainSize / 2;
+	}
+		h5{
+		color: $thirdColor;
+		margin-bottom: $mainSize / 2;
+	}
+	input{
+		color: $thirdColor;
+		font-size: 10px;
+		letter-spacing: 1px;
+		padding: $mainSize / 5;
+
+	}
+	button{
+		padding-top:$mainSize / 5.6;
+		padding-bottom:$mainSize / 5.4;
+		padding-left:$mainSize / 5.5;
+		padding-right:$mainSize / 5.5;
+		margin-left: - $mainSize / 10;
+		background-color:$mainColor;
+		border: none;
+		color: $fourthColor;
+		letter-spacing: 1px;
+		}
+	}
+}
+.last{
+	border-bottom: 1px solid lighten($thirdColor, 20% );
+
+}
+.footer{
+	h5{
+		text-align: center;
+		color: $thirdColor;
+		padding-top: $mainSize / 4;
+
+	}
+	&:after{
+			content: " ";
+			position: absolute;
+			border:220px solid transparent;
+			border-bottom:220px solid $mainColor;
+			transform:rotate(135deg);
+			margin-top: -$mainSize * 4;
+			margin-right: 0;
+			margin-left: 2.79 * $margin;
+		}
+
+}
+}

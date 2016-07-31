@@ -1,0 +1,719 @@
+$mainColor: #29c2e1;
+$secondColor: #e5eef0;
+$thirdColor: #8d8d8d;
+$fourthColor: #ffffff;
+$fifthColor: #f7941d;
+$sixthColor: #23282f;
+$mainSize: 50px;
+$margin: 400px;
+
+html, body{
+	margin:0;
+	padding:0;
+	font-family:Tahoma;
+}
+#header{
+	.information{
+		background-color: $secondColor ;
+		height:$mainSize; 
+		li{
+			line-height: $mainSize;
+			color: lighten($thirdColor, 20%);
+			margin-right: $mainSize / 2; 
+			margin-top: -2px;
+			&:nth-child(2){
+				border-left: 1px solid lighten($thirdColor, 10%);
+			}
+		
+			i{
+				margin-top: $mainSize / 10;
+				margin-right: $mainSize / 20;
+				padding-left: $mainSize / 2;
+				font-size: 1.5em;
+			}
+		}
+	}
+	.menu{
+		img{
+			margin-top: -$mainSize / 8;
+		}
+ 		li{
+ 			padding-left: $mainSize / 2;
+ 			padding-right: $mainSize / 2;
+ 			transition: all .1s ease;
+ 			a{
+ 			text-decoration: none;	
+ 			color: lighten($thirdColor, 20%);	
+			&:hover{
+ 				color: darken($thirdColor, 20%);
+ 			}	
+ 		}
+			&:last-child{
+	 			margin-top: -$mainSize / 8;
+	 			margin-bottom: -$mainSize / 8;
+	 			padding-top:$mainSize / 8;
+	 			padding-bottom:$mainSize / 8;
+	 			background-color:$mainColor;
+	 			border-radius: 20px;
+	 			a{
+	 				color: $fourthColor;
+	 			&:hover{
+ 				color: darken($thirdColor, 20%);
+ 					}
+	 			}
+ 			}		
+ 		}
+	}
+}
+
+#banner{
+	.main{
+		height: 750px;
+		background-color:$thirdColor;
+		margin-top: -$mainSize / 2;
+		color: $fourthColor;
+		text-align: center;
+		letter-spacing: 1px;
+		h3{
+			&:first-child{
+				margin-top: $mainSize * 4; 
+			}
+		}
+		h1{
+			margin-top: $mainSize;
+		}
+		.comment{
+		    width: $mainSize * 2;
+		    min-height: $mainSize;
+		    position: relative;
+		    background: $thirdColor;
+		    margin-top: $margin / 10 * 6;
+		    margin-left: $margin / 20 * 31;
+		    border: $mainSize / 10 solid $fourthColor;
+		    border-radius: 100%;
+		    padding: $mainSize / 5;
+		    
+		}
+		.comment:after {
+		    content: "";
+		    position: absolute;
+		    border-bottom: $mainSize / 5 solid $fourthColor;
+		    border-left: $mainSize / 5 solid transparent;
+		    transform: rotate(45deg);
+		    margin-top: $mainSize / 5;
+		    
+		}
+ 		.slideButton{
+ 			margin-top: $margin / 27 * 4;
+ 		}
+	} 
+}
+#makeYourStartUp{
+	 
+	.leftSide{
+		margin-top: $mainSize / 3 * 4;
+		margin-left: $mainSize / 8 * 3;
+		p{
+			color: $thirdColor;
+			margin-top: $mainSize / 5 * 4;
+		}
+		div{
+			height: 301px;
+			margin-top: $mainSize;
+			background-color: $thirdColor;
+			h3{
+				text-align: center;
+				color: $fourthColor;
+				letter-spacing: 2px;
+				&:first-child{
+					margin-top: $mainSize * 3;
+				}
+				&:last-child{
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.boostYourBusiness{
+		margin-top: $mainSize *2;
+		img{
+		float:left;
+		margin-right: $mainSize / 5 * 3;
+		margin-bottom: $mainSize / 5 * 3;
+
+		}
+	}
+.filtering{
+		margin-top: $mainSize;
+		img{
+		float:left;
+		margin-right: $mainSize / 5 * 3;
+		margin-bottom: $mainSize / 5 * 3;
+		}
+	}
+.solutions{
+		margin-top: $mainSize;
+		img{
+		float:left;
+		margin-right: $mainSize / 5 * 3;
+		margin-bottom: $mainSize / 5 * 3;
+		}
+	}
+	button{
+		padding-top:$mainSize / 8;
+	 	padding-bottom:$mainSize / 8;
+	 	padding-left:$mainSize / 3;
+	 	padding-right:$mainSize / 3;
+	 	margin-left: $mainSize / 10 * 19;
+	 	margin-top: $mainSize;
+	 	background-color:$mainColor;
+	 	border: none;
+	 	border-radius: 20px;
+	 	color: $fourthColor;
+	 	letter-spacing: 1px;
+	}
+}
+
+#clients{
+	.main{
+		background-color: $secondColor;
+		width: 100%;
+		padding-top: $mainSize * 2;
+		padding-bottom: $mainSize / 5 * 11;
+		margin-bottom: $mainSize * 2;
+	
+	.leftSide{
+		margin-left: $mainSize / 8 * 3;
+		color: #000000;
+		i{
+			margin-top: $mainSize / 5 * 6;
+			margin-bottom: $mainSize / 2;
+			margin-right: $mainSize;
+			float: left;
+		}
+		p{
+			font-size: $mainSize / 50 * 13;
+			margin-top: $mainSize / 5 * 6;
+			line-height: $mainSize / 2;
+			color: $sixthColor;
+		}
+		h6{
+			margin-top: $mainSize / 5 * 4;
+			margin-left: $mainSize * 2;
+			color: $sixthColor;
+		}
+		h5{
+			margin-left: $mainSize * 2;
+			color: $fifthColor;
+		}
+	}
+	.rightSide{
+		float: left;
+		div{
+			background-color: $thirdColor;
+			color: $fourthColor;
+			height: 132px;
+			width: 132px;
+			border-radius: 100%;
+			float: left;
+			margin-left: $mainSize / 5 * 3;
+			margin-top: $mainSize / 10 * 25;
+			h6{
+				text-align: center;
+				&:first-child{
+					margin-top: $mainSize;
+				}	
+			}
+		}
+		.orange{
+			background-color: $fifthColor; 
+			}
+		}
+	}
+}
+#features{
+.main{
+		
+		margin-left: $mainSize / 8 * 3;
+		color: #000000;
+		border-bottom: 1px solid lighten($thirdColor, 20% ); 
+		margin-bottom:$mainSize * 2;
+		h4{
+			letter-spacing: 1 px;
+		}
+		div{
+		margin-top: $mainSize;
+		img{
+		float:left;
+		margin-right: $mainSize / 5 * 3;
+		margin-bottom: $mainSize / 5 * 3;
+		}
+		h4{
+			margin-top: - $mainSize / 10;
+		}
+		p{
+			color: $sixthColor;
+			}
+		}
+		button{
+		padding-top:$mainSize / 8;
+	 	padding-bottom:$mainSize / 8;
+	 	padding-left:$mainSize / 3;
+	 	padding-right:$mainSize / 3;
+	 	margin-left: $margin + $mainSize / 5 * 7;
+	 	margin-top: $mainSize;
+	 	background-color:$mainColor;
+	 	border: none;
+	 	border-radius: 20px;
+	 	color: $fourthColor;
+	 	letter-spacing: 1px;
+	}
+	.orange{
+	height: 240px;
+	width: 100px;
+	border:70px solid transparent;
+	border-bottom:120px solid $fifthColor;
+	margin-left: $margin * 2.38;
+	margin-top: -$mainSize * 3;	
+	margin-bottom: -$mainSize;
+	&:after{
+		content: " ";
+		height: 190px;
+		position: absolute;
+		border:60px solid transparent;
+		border-bottom:95px solid $mainColor;
+		transform:rotate(-90 deg);
+		margin-top: -$mainSize / 2.6;
+		margin-left: -$mainSize * 3;
+	}
+	}
+	}
+}
+
+#pricing{
+	.main{
+		.personal{
+			border: 1px solid lighten($thirdColor, 20% );
+			padding: $mainSize / 10;
+			text-align: center;
+			h3{
+			border-bottom: 1px solid lighten($thirdColor, 20% );
+			margin-left: -$mainSize / 10;
+			margin-right: -$mainSize / 10;
+			padding-bottom: $mainSize / 5;
+			span{
+			border-bottom: 1px solid $fifthColor;
+			padding-bottom: $mainSize / 5;
+			}
+		}
+			h4{
+			border-bottom: 1px solid  lighten($thirdColor, 20% );
+			margin-left: -$mainSize / 10;
+			margin-right: -$mainSize / 10;
+			margin-bottom: $mainSize / 5 * 3;
+			padding-bottom: $mainSize / 5 * 2;	
+			padding-top: $mainSize / 5;
+			span{
+				color: $fifthColor;
+			}	
+			}
+		p{
+			font-size: 16px;
+			}
+		button{
+			padding-top:$mainSize / 8;
+		 	padding-bottom:$mainSize / 8;
+		 	padding-left:$mainSize / 3;
+		 	padding-right:$mainSize / 3;
+		 	margin-top: $mainSize * 2;
+		 	margin-bottom: $mainSize / 5 * 4;
+		 	background-color:$mainColor;
+		 	border: none;
+		 	border-radius: 20px;
+		 	color: $fourthColor;
+		 	letter-spacing: 1px;
+			}
+	}
+	.business{
+		border: 1px solid lighten($thirdColor, 20% );
+		padding: $mainSize / 10;
+		text-align: center;
+		h3{
+			border-bottom: 1px solid lighten($thirdColor, 20% );
+			margin-left: -$mainSize / 10;
+			margin-right: -$mainSize / 10;
+			padding-bottom: $mainSize / 5;
+			span{
+				border-bottom: 1px solid $fifthColor;
+				padding-bottom: $mainSize / 5;
+			}
+		}
+		h4{
+			border-bottom: 1px solid  lighten($thirdColor, 20% );
+			margin-left: -$mainSize / 10;
+			margin-right: -$mainSize / 10;
+			margin-bottom: $mainSize / 5 * 3;
+			padding-bottom: $mainSize / 5 * 2;	
+			padding-top: $mainSize / 5;
+			span{
+				color: $fifthColor;
+			}	
+			}
+		p{
+			font-size: 16px;
+			}
+		button{
+			padding-top:$mainSize / 8;
+		 	padding-bottom:$mainSize / 8;
+		 	padding-left:$mainSize / 3;
+		 	padding-right:$mainSize / 3;
+		 	margin-top: $mainSize / 8 * 11;
+		 	margin-bottom: $mainSize / 5 * 4;
+		 	background-color:$mainColor;
+		 	border: none;
+		 	border-radius: 20px;
+		 	color: $fourthColor;
+		 	letter-spacing: 1px;
+			}
+	}
+	.gold{
+		border: 1px solid lighten($thirdColor, 20% );
+		padding: $mainSize / 10;
+		text-align: center;
+		h3{
+			border-bottom: 1px solid lighten($thirdColor, 20% );
+			margin-left: -$mainSize / 10;
+			margin-right: -$mainSize / 10;
+			padding-bottom: $mainSize / 5;
+		span{
+			border-bottom: 1px solid $fifthColor;
+			padding-bottom: $mainSize / 5;
+			}
+		}
+		h4{
+			border-bottom: 1px solid  lighten($thirdColor, 20% );
+			margin-left: -$mainSize / 10;
+			margin-right: -$mainSize / 10;
+			margin-bottom: $mainSize / 5 * 3;
+			padding-bottom: $mainSize / 5 * 2;	
+			padding-top: $mainSize / 5;
+			span{
+				color: $fifthColor;
+			}	
+			}
+		p{
+			font-size: 16px;
+			}
+		button{
+	padding-top:$mainSize / 8;
+	padding-bottom:$mainSize / 8;
+	padding-left:$mainSize / 3;
+	padding-right:$mainSize / 3;
+	margin-top: $mainSize * 2;
+	margin-bottom: $mainSize / 5 * 4;
+	background-color:$mainColor;
+	border: none;
+	border-radius: 20px;
+	color: $fourthColor;
+	letter-spacing: 1px;
+		}
+	}		
+	.ultimate{
+		border: 1px solid lighten($thirdColor, 20% );
+		padding: $mainSize / 10;
+		text-align: center;
+		h3{
+			border-bottom: 1px solid lighten($thirdColor, 20% );
+			margin-left: -$mainSize / 10;
+			margin-right: -$mainSize / 10;
+			padding-bottom: $mainSize / 5;
+			span{
+				border-bottom: 1px solid $fifthColor;
+				padding-bottom: $mainSize / 5;
+				}
+		}
+		h4{
+			border-bottom: 1px solid  lighten($thirdColor, 20% );
+			margin-left: -$mainSize / 10;
+			margin-right: -$mainSize / 10;
+			margin-bottom: $mainSize / 5 * 3;
+			padding-bottom: $mainSize / 5 * 2;	
+			padding-top: $mainSize / 5;
+			span{
+				color: $fifthColor;
+			}	
+			}
+		p{
+			font-size: 16px;
+			}
+		button{
+			padding-top:$mainSize / 8;
+		 	padding-bottom:$mainSize / 8;
+		 	padding-left:$mainSize / 3;
+		 	padding-right:$mainSize / 3;
+		 	margin-top: $mainSize / 8 * 11;
+		 	margin-bottom: $mainSize / 5 * 4;
+		 	background-color:$mainColor;
+		 	border: none;
+		 	border-radius: 20px;
+		 	color: $fourthColor;
+		 	letter-spacing: 1px;
+			}
+	}
+	}
+}
+#team{
+	.main{
+		margin-bottom: $mainSize * 2;
+		background-color: $secondColor;
+		margin-top: $mainSize * 2;
+		padding-bottom: $mainSize * 2;
+		.specialist{
+			margin-top: $mainSize;
+			.topSide{
+			width: 100%;
+			height: 263px;
+			background-color: $thirdColor;
+			text-align: center;
+			padding-top: $mainSize * 2;
+			}
+			h4{
+				color:$fourthColor;
+
+			}
+		}
+			.bottomSide{
+				width: 100%;
+				background-color: $fourthColor;
+				padding-top: $mainSize / 5 * 2;
+				padding-left: $mainSize / 5 * 3;
+				padding-bottom: $mainSize / 5 * 2;
+				h5{
+					color: $sixthColor;
+				span{
+					color: $fifthColor;
+				}	
+				}
+				i{
+					color:darken($secondColor, 20%);
+				}
+			}
+		.clientSupport{
+			margin-top: $mainSize;
+			.topSide{
+			width: 100%;
+			height: 263px;
+			background-color: $thirdColor;
+			text-align: center;
+			padding-top: $mainSize * 2;
+			}
+			h4{
+				color:$fourthColor;
+
+			}
+		}
+			.bottomSide{
+				width: 100%;
+				background-color: $fourthColor;
+				padding-top: $mainSize / 5 * 2;
+				padding-left: $mainSize / 5 * 3;
+				padding-bottom: $mainSize / 5 * 2;
+				h5{
+					color: $sixthColor;
+				span{
+					color: $fifthColor;
+				}	
+				}
+				i{
+					color:darken($secondColor, 20%);
+				}
+			}
+		.clientManagement{
+			margin-top: $mainSize;
+			.topSide{
+			width: 100%;
+			height: 263px;
+			background-color: $thirdColor;
+			text-align: center;
+			padding-top: $mainSize * 2;
+			}
+			h4{
+				color:$fourthColor;
+
+			}
+		}
+			.bottomSide{
+				width: 100%;
+				background-color: $fourthColor;
+				padding-top: $mainSize / 5 * 2;
+				padding-left: $mainSize / 5 * 3;
+				padding-bottom: $mainSize / 5 * 2;
+				h5{
+					color: $sixthColor;
+				span{
+					color: $fifthColor;
+				}	
+				}
+				i{
+					color:darken($secondColor, 20%);
+				}
+			}
+		.communication{
+			margin-top: $mainSize;
+			.topSide{
+			width: 100%;
+			height: 263px;
+			background-color: $thirdColor;
+			text-align: center;
+			padding-top: $mainSize * 2;
+			}
+			h4{
+				color:$fourthColor;
+
+			}
+		}
+			.bottomSide{
+				width: 100%;
+				background-color: $fourthColor;
+				padding-top: $mainSize / 5 * 2;
+				padding-left: $mainSize / 5 * 3;
+				padding-bottom: $mainSize / 5 * 2;
+				h5{
+					color: $sixthColor;
+				span{
+					color: $fifthColor;
+				}	
+				}
+				i{
+					color:darken($secondColor, 20%);
+				}
+			}
+
+	}
+}
+#freeService{
+	.main{
+		text-align: center;
+		border-bottom: 1px solid lighten($thirdColor, 20% );
+		margin-bottom: $mainSize / 2 * 3;
+		h1{
+			color:#000000;
+			span{
+				color: $fifthColor;
+			}
+		}
+		h5{
+			text-transform: uppercase;
+		}
+		button{
+			padding-top:$mainSize / 8;
+		 	padding-bottom:$mainSize / 8;
+		 	padding-left:$mainSize / 3;
+		 	padding-right:$mainSize / 3;
+		 	margin-top: $mainSize / 5 * 3;
+		 	margin-bottom: $mainSize / 5 * 4;
+		 	background-color:$mainColor;
+		 	border: none;
+		 	border-radius: 20px;
+		 	color: $fourthColor;
+		 	letter-spacing: 1px;
+			}
+			.orange{
+				background-color: $fifthColor;
+			}
+	}
+}
+#footer{
+	.main{
+		
+		padding-bottom: $mainSize;		
+		&:after{
+			content: " ";
+			height: 400px;
+			position: absolute;
+			border:250px solid transparent;
+			border-bottom:240px solid $fifthColor;
+			transform:rotate(-136deg);
+			margin-left: -$margin * 1.1;
+			margin-top: -$mainSize / 0.76;
+		}
+		img{
+			margin-left: $mainSize / 10 * 3;
+		}
+	.menu{
+		h3{
+		margin-bottom: $mainSize / 2;
+	}
+		h5{
+			color: $thirdColor;
+			margin-top: $mainSize / 10;
+			margin-left: -$mainSize / 4;
+		}
+		i{
+			color: $thirdColor;
+		
+		}
+	}
+	.contact{
+		h3{
+		margin-bottom: $mainSize / 2;
+	}
+		h5{
+		color: $thirdColor;
+		span{
+			color: #000000;
+			}
+		}
+	}
+	.newsletter{
+		h3{
+		margin-bottom: $mainSize / 2;
+	}
+		h5{
+		color: $thirdColor;
+		margin-bottom: $mainSize / 2;
+	}
+	input{
+		color: $thirdColor;
+		font-size: 10px;
+		letter-spacing: 1px;
+		padding: $mainSize / 5;
+
+	}
+	button{
+		padding-top:$mainSize / 5.6;
+		padding-bottom:$mainSize / 5.4;
+		padding-left:$mainSize / 5.5;
+		padding-right:$mainSize / 5.5;
+		margin-left: - $mainSize / 10;
+		background-color:$mainColor;
+		border: none;
+		color: $fourthColor;
+		letter-spacing: 1px;
+		}
+	}
+}
+.last{
+	border-bottom: 1px solid lighten($thirdColor, 20% );
+
+}
+.footer{
+	h5{
+		text-align: center;
+		color: $thirdColor;
+		padding-top: $mainSize / 4;
+
+	}
+	&:after{
+			content: " ";
+			position: absolute;
+			border:220px solid transparent;
+			border-bottom:220px solid $mainColor;
+			transform:rotate(135deg);
+			margin-top: -$mainSize * 4;
+			margin-right: 0;
+			margin-left: 2.79 * $margin;
+		}
+
+}
+}
